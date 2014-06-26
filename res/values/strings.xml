@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Yamba</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="submit">Submit</string>
+    <string name="maxchars">140</string>
+    <string name="password">Password</string>
+    <string name="user_name">User Name</string>
+    <string name="post">Post</string>
+    <string name="refresh">Refresh</string>
+
+    <string-array name="intervals">
+        <item>No Refresh</item>
+        <item>Every 15 Minutes</item>
+        <item>Every Half Hour</item>
+        <item>Every Hour</item>
+        <item>Every 12 Hours</item>
+        <item>Every Day</item>
+    </string-array>
+    <string-array name="intervalValues">
+        <item>0</item>
+        <item>900000</item>
+        <item>1800000</item>
+        <item>3600000</item>
+        <item>43200000</item>
+        <item>86400000</item>
+    </string-array>
+
+    <string name="title_activity_timeline">TimelineActivity</string>
+
+    <string name="timeline">Timeline</string>
+
+</resources>

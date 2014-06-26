@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <EditTextPreference android:key="username" android:title="@string/user_name"/>
+    <EditTextPreference android:key="password" android:title="@string/password"/>
+
+    <ListPreference
+        android:key="interval"
+        android:title="Update Interval"
+        android:summary="Refeshing the Timeline."
+        android:defaultValue="900000"
+        android:entries="@array/intervals"
+        android:entryValues="@array/intervalValues"
+        />
+</PreferenceScreen>

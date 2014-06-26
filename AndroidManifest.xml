@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thenewcircle.yamba"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    
+    <!-- Add Instrumentation and test.runner lib for Unit testing -->
+    <instrumentation android:name="android.test.InstrumentationTestRunner"
+    		android:targetPackage="com.thenewcircle.yamba"
+    		android:label="YambaTest" />
+
+    <application
+        android:name="com.thenewcircle.yamba.YambaApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner"/>
+        
+        <activity
+            android:name="com.thenewcircle.yamba.TimelineActivity"
+            android:label="@string/title_activity_timeline" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thenewcircle.yamba.StatusActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="com.thenewcircle.yamba.SettingsActivity" />
+
+        <service android:name="com.thenewcircle.yamba.PostService" />
+        <service android:name="com.thenewcircle.yamba.TimelineService" />
+
+        <provider
+            android:name="com.thenewcircle.yamba.TimelineContentProvider"
+            android:authorities="com.thenewcircle.yamba.contentprovider" />
+
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/detailsMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Hello World I like Yamba"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/detailsUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/detailsMessage"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="20dp"
+        android:text="Fred Smith" />
+
+    <TextView
+        android:id="@+id/detailsTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/detailsUser"
+        android:layout_alignBottom="@+id/detailsUser"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="19dp"
+        android:text="11:59 am 12/2/2013" />
+
+    <TextView
+        android:id="@+id/detailsLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/detailsUser"
+        android:layout_below="@+id/detailsUser"
+        android:layout_marginTop="28dp"
+        android:text="30.4123" />
+
+    <TextView
+        android:id="@+id/detailsLon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/detailsLat"
+        android:layout_alignBottom="@+id/detailsLat"
+        android:layout_toLeftOf="@+id/detailsTime"
+        android:text="-32.23123" />
+
+</RelativeLayout>
